@@ -6,7 +6,16 @@ api-version: 1.16
 commands:
   manhuntinfo:
     description: tells how to use manhunt plugin
-    usage: /manhuntinfo
+    usage: /<command>
   getcompass:
     description: gives the player thier first compass
-    usage: /getcompass
+    usage: /<command>
+  titletest:
+    description: title for testing
+    usage: /<command> [player]
+  disphunters:
+    description: Displays the Users in the hunter collection (debug)
+    usage: /<command>
+  addhunter:
+    description: Displays the Users in the hunter collection (debug)
+    usage: /<command> [player]

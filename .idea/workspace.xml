@@ -25,6 +25,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="619fff84-3f2a-4515-88f8-b1225d09ab23" name="Default Changelist" comment="added manhuntinfo command">
+      <change afterPath="$PROJECT_DIR$/out/production/Manhunt/com/mypackage/GetCompass.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Manhunt/com/mypackage/ManhuntGameListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/mypackage/AddHunter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/mypackage/DebugDisplayHunters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/mypackage/InfoTitleTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Manhunt_jar/Manhunt.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Manhunt_jar/Manhunt.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Manhunt/com/mypackage/Manhunt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Manhunt/com/mypackage/Manhunt.class" afterDir="false" />
@@ -99,7 +104,21 @@
       <option name="project" value="LOCAL" />
       <updated>1608261025927</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added Color">
+      <created>1608263343144</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1608263343144</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added Basic Compass (No Tracking)">
+      <created>1608263367176</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1608263367176</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -119,13 +138,15 @@
     <MESSAGE value="added manhunt.jar output" />
     <MESSAGE value="added manhuntinfo command" />
     <MESSAGE value="Added Color" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Color" />
+    <MESSAGE value="Added Basic Compass (No Tracking)" />
+    <MESSAGE value="Added Runner and Hunter Collections" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Runner and Hunter Collections" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="575" y="120" key="#com.intellij.ide.util.MemberChooser" timestamp="1608261280256">
+    <state x="575" y="120" key="#com.intellij.ide.util.MemberChooser" timestamp="1608271632477">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="575" y="120" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1608261280256" />
+    <state x="575" y="120" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1608271632477" />
     <state x="560" y="154" key="FileChooserDialogImpl" timestamp="1608259107409">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -134,10 +155,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="335" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1608259729318" />
-    <state x="362" y="146" key="Vcs.Push.Dialog.v2" timestamp="1608261051036">
+    <state x="362" y="146" key="Vcs.Push.Dialog.v2" timestamp="1608263400803">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="362" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1608261051036" />
+    <state x="362" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1608263400803" />
     <state x="663" y="360" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608260049239">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
