@@ -5,17 +5,33 @@
       <artifact name="Manhunt:jar" />
     </artifacts-to-build>
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="619fff84-3f2a-4515-88f8-b1225d09ab23" name="Default Changelist" comment="added manhuntinfo command">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Manhunt/com/mypackage/CommandManhuntinfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mypackage/CommandManhuntinfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Manhunt_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Manhunt_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Manhunt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Manhunt.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Manhunt_jar/Manhunt.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Manhunt_jar/Manhunt.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Manhunt/com/mypackage/Manhunt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Manhunt/com/mypackage/Manhunt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Manhunt/com/mypackage/CommandManhuntinfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Manhunt/com/mypackage/CommandManhuntinfo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Manhunt/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Manhunt/plugin.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mypackage/Manhunt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mypackage/Manhunt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mypackage/CommandManhuntinfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mypackage/CommandManhuntinfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,13 +62,16 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Plugins/spigot-api-1.16.4-R0.1-20201125.232430-26.jar" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/spigot-api-1.16.4-R0.1-20201125.232430-26 (2).jar!/" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="619fff84-3f2a-4515-88f8-b1225d09ab23" name="Default Changelist" comment="" />
@@ -78,10 +97,36 @@
     <option name="localTasksCounter" value="3" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added basic plugin essentials" />
     <MESSAGE value="added manhunt.jar output" />
     <MESSAGE value="added manhuntinfo command" />
     <option name="LAST_COMMIT_MESSAGE" value="added manhuntinfo command" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="560" y="154" key="FileChooserDialogImpl" timestamp="1608259107409">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="560" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1608259107409" />
+    <state x="335" y="0" key="SettingsEditor" timestamp="1608259729318">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="335" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1608259729318" />
+    <state x="663" y="360" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608260049239">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="663" y="360" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1608260049239" />
   </component>
 </project>

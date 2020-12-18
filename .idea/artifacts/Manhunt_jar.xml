@@ -3,7 +3,7 @@
     <output-path>$PROJECT_DIR$/out/artifacts/Manhunt_jar</output-path>
     <root id="archive" name="Manhunt.jar">
       <element id="module-output" name="Manhunt" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/../../Plugins/spigot-api-1.16.4-R0.1-20201213.004254-30.jar" path-in-jar="/" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/spigot-api-1.16.4-R0.1-20201125.232430-26 (2).jar" />
     </root>
   </artifact>
 </component>

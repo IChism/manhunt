@@ -2,7 +2,7 @@ name: manhunt
 version: 0.1
 authors: [ArcMissile, toomuchdog]
 main: com.mypackage.Manhunt
-api-version: 1.16.4
+api-version: 1.16
 commands:
   manhuntinfo:
     description: tells how to use manhunt plugin

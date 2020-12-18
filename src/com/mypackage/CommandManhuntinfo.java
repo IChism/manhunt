@@ -14,7 +14,7 @@ public class CommandManhuntinfo implements CommandExecutor {
         }
         Player player = (Player) commandSender;
 
-        player.sendRawMessage("hello");
+        player.sendRawMessage("§3hello");
 
 
         return true;
