@@ -7,10 +7,10 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../Plugins/spigot-api-1.16.4-R0.1-20201213.004254-30.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Plugins/spigot-api-1.16.4-R0.1-20201125.232430-26.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

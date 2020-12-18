@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Manhunt:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="619fff84-3f2a-4515-88f8-b1225d09ab23" name="Default Changelist" comment="" />
+    <list default="true" id="619fff84-3f2a-4515-88f8-b1225d09ab23" name="Default Changelist" comment="added manhuntinfo command">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Manhunt/com/mypackage/CommandManhuntinfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/mypackage/CommandManhuntinfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manhunt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Manhunt.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Manhunt_jar/Manhunt.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Manhunt_jar/Manhunt.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Manhunt/com/mypackage/Manhunt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Manhunt/com/mypackage/Manhunt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Manhunt/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Manhunt/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mypackage/Manhunt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mypackage/Manhunt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugin.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,8 +46,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Plugins/spigot-api-1.16.4-R0.1-20201213.004254-30.jar" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Plugins/spigot-api-1.16.4-R0.1-20201125.232430-26.jar" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -52,11 +68,20 @@
       <option name="project" value="LOCAL" />
       <updated>1608256934473</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added manhunt.jar output">
+      <created>1608257237726</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608257237726</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added basic plugin essentials" />
-    <option name="LAST_COMMIT_MESSAGE" value="added basic plugin essentials" />
+    <MESSAGE value="added manhunt.jar output" />
+    <MESSAGE value="added manhuntinfo command" />
+    <option name="LAST_COMMIT_MESSAGE" value="added manhuntinfo command" />
   </component>
 </project>
