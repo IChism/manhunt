@@ -24,12 +24,14 @@ public class RemoveHunter implements CommandExecutor {
         }
 
         //If the player is not on the hunter team then send the player an error message
-        Player target = Bukkit.getPlayerExact(args[0]);
-        String name = target.getDisplayName();
+        Player target = Bukkit.getPlayer(args[0]);
+
         if(target == null) {
-            commandSender.sendMessage(ChatColor.RED+"Error, " + name + " not found or online");
+            commandSender.sendMessage(ChatColor.RED+"Error, " + target.getName() + " not found or online");
             return true;
         }
+        String name = target.getName();
+
         if(!plugin.getHunterIDs().contains(target.getUniqueId())){
             commandSender.sendMessage(ChatColor.RED+"Error, " + name + " is not on hunter team");
             return true;
@@ -41,7 +43,7 @@ public class RemoveHunter implements CommandExecutor {
         }
         else{
             plugin.removeHunter(target);
-            commandSender.sendMessage(ChatColor.AQUA + name + ", was successfully removed from hunters");
+            commandSender.sendMessage(ChatColor.AQUA +"[Manhunt] " + name + ", was successfully removed from hunters");
         }
 
         return true;

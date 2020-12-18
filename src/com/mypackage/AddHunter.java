@@ -30,7 +30,7 @@ public class AddHunter implements CommandExecutor {
             commandSender.sendMessage(ChatColor.RED + "Error, " +target.getDisplayName() + " not found or online");
             return true;
         }
-        String name = target.getDisplayName();
+        String name = target.getName();
 
         if(plugin.getHunterIDs().contains(target.getUniqueId())){
             commandSender.sendMessage(ChatColor.RED + "Error, " + name + " is already on hunter team");
@@ -43,7 +43,7 @@ public class AddHunter implements CommandExecutor {
         }
         else{
             plugin.addHunter(target);
-            commandSender.sendMessage(ChatColor.AQUA +"[Manhunt]" + name + " was successfully added to hunters");
+            commandSender.sendMessage(ChatColor.AQUA +"[Manhunt] " + name + " was successfully added to hunters");
         }
 
         return true;

@@ -24,13 +24,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="619fff84-3f2a-4515-88f8-b1225d09ab23" name="Default Changelist" comment="added manhuntinfo command">
+    <list default="true" id="619fff84-3f2a-4515-88f8-b1225d09ab23" name="Default Changelist" comment="Added Removing Hunters and formatted adding and removal command output to look nice">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Manhunt_jar/Manhunt.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Manhunt_jar/Manhunt.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Manhunt/com/mypackage/AddHunter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Manhunt/com/mypackage/AddHunter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Manhunt/com/mypackage/RemoveHunter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Manhunt/com/mypackage/RemoveHunter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/mypackage/AddHunter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mypackage/AddHunter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mypackage/DebugDisplayHunters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mypackage/DebugDisplayHunters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mypackage/Manhunt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mypackage/Manhunt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mypackage/RemoveHunter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mypackage/RemoveHunter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +127,21 @@
       <option name="project" value="LOCAL" />
       <updated>1608273417012</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added Removing Hunters and formatted adding and removal command output to look nice ;)">
+      <created>1608322938741</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1608322938741</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added Removing Hunters and formatted adding and removal command output to look nice">
+      <created>1608322952296</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1608322952296</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -149,7 +163,9 @@
     <MESSAGE value="Added Color" />
     <MESSAGE value="Added Basic Compass (No Tracking)" />
     <MESSAGE value="Added Runner and Hunter Collections" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Runner and Hunter Collections" />
+    <MESSAGE value="Added Removing Hunters and formatted adding and removal command output to look nice ;)" />
+    <MESSAGE value="Added Removing Hunters and formatted adding and removal command output to look nice" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Removing Hunters and formatted adding and removal command output to look nice" />
   </component>
   <component name="WindowStateProjectService">
     <state x="575" y="120" key="#com.intellij.ide.util.MemberChooser" timestamp="1608321236790">
@@ -164,10 +180,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="335" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1608259729318" />
-    <state x="362" y="146" key="Vcs.Push.Dialog.v2" timestamp="1608273425600">
+    <state x="362" y="146" key="Vcs.Push.Dialog.v2" timestamp="1608322961434">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="362" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1608273425600" />
+    <state x="362" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1608322961434" />
     <state x="663" y="360" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608260049239">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
