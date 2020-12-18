@@ -1,6 +1,7 @@
 package com.mypackage;
 
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.Server;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -25,23 +26,24 @@ public class AddHunter implements CommandExecutor {
 
         //If the player is already on the hunter team then send the player an error message
         Player target = Bukkit.getPlayerExact(args[0]);
-
         if(target == null) {
-            commandSender.sendMessage("§cError, player not found or online");
+            commandSender.sendMessage(ChatColor.RED + "Error, " +target.getDisplayName() + " not found or online");
             return true;
         }
+        String name = target.getDisplayName();
+
         if(plugin.getHunterIDs().contains(target.getUniqueId())){
-            commandSender.sendMessage("§cError, player is already on hunter team");
+            commandSender.sendMessage(ChatColor.RED + "Error, " + name + " is already on hunter team");
             return true;
         }
         else if(plugin.getRunnerIDs().contains(target.getUniqueId())){
-            commandSender.sendMessage("§cError, player is already on runner team");
-            commandSender.sendMessage("§cRemove the player from the other team first");
+            commandSender.sendMessage(ChatColor.RED + "Error, " + name + " is already on runner team");
+            commandSender.sendMessage(ChatColor.RED + "Remove the player from the other team first");
             return true;
         }
         else{
             plugin.addHunter(target);
-            commandSender.sendMessage("§bPlayer, was successfully added to hunters");
+            commandSender.sendMessage(ChatColor.AQUA +"[Manhunt]" + name + " was successfully added to hunters");
         }
 
         return true;

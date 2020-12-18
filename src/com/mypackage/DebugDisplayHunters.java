@@ -2,6 +2,7 @@ package com.mypackage;
 
 
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -26,7 +27,7 @@ public class DebugDisplayHunters implements CommandExecutor {
         else {
             for (UUID u : plugin.getHunterIDs()) {
 
-                commandSender.sendMessage("§cPlayer: §2" + Bukkit.getPlayer(u).getName());
+                commandSender.sendMessage(ChatColor.YELLOW+"Player: "+ ChatColor.AQUA + Bukkit.getPlayer(u).getName());
             }
         }
         return true;

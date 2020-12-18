@@ -17,5 +17,8 @@ commands:
     description: Displays the Users in the hunter collection (debug)
     usage: /<command>
   addhunter:
-    description: Displays the Users in the hunter collection (debug)
+    description: Removes the Users in the hunter collection
+    usage: /<command> [player]
+  removehunter:
+    description: Removes the Users in the hunter collection
     usage: /<command> [player]
