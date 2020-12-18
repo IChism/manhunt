@@ -7,3 +7,6 @@ commands:
   manhuntinfo:
     description: tells how to use manhunt plugin
     usage: /manhuntinfo
+  getcompass:
+    description: gives the player thier first compass
+    usage: /getcompass
