@@ -25,17 +25,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="619fff84-3f2a-4515-88f8-b1225d09ab23" name="Default Changelist" comment="added manhuntinfo command">
-      <change afterPath="$PROJECT_DIR$/out/production/Manhunt/com/mypackage/GetCompass.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Manhunt/com/mypackage/ManhuntGameListener.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mypackage/AddHunter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mypackage/DebugDisplayHunters.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mypackage/InfoTitleTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Manhunt_jar/Manhunt.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Manhunt_jar/Manhunt.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Manhunt/com/mypackage/Manhunt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Manhunt/com/mypackage/Manhunt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Manhunt/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Manhunt/plugin.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mypackage/Manhunt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mypackage/Manhunt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608263367176</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added Runner and Hunter Collections">
+      <created>1608273396083</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1608273396083</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
