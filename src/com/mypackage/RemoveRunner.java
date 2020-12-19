@@ -32,11 +32,11 @@ public class RemoveRunner implements CommandExecutor {
         }
         String name = target.getName();
 
-        if(!team.getHunters().contains(target.getUniqueId())){
+        if(!team.getRunners().keySet().contains(target.getUniqueId())){
             commandSender.sendMessage(ChatColor.RED+"Error, " + name + " is not on the runner team");
             return true;
         }
-        else if(team.getRunners().keySet().contains(target.getUniqueId())){
+        else if(team.getHunters().contains(target.getUniqueId())){
             commandSender.sendMessage(ChatColor.RED+"Error, " + name + " is on the hunter team");
             commandSender.sendMessage(ChatColor.RED+"Remove the player from the other team");
             return true;
