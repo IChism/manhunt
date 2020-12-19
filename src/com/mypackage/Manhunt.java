@@ -2,7 +2,6 @@ package com.mypackage;
 
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
-
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
@@ -20,6 +19,8 @@ public class Manhunt extends JavaPlugin {
         Objects.requireNonNull(this.getCommand("titletest")).setExecutor(new InfoTitleTest());
         Objects.requireNonNull(this.getCommand("addhunter")).setExecutor(new AddHunter(this));
         Objects.requireNonNull(this.getCommand("removehunter")).setExecutor(new RemoveHunter(this));
+        Objects.requireNonNull(this.getCommand("addrunner")).setExecutor(new AddRunner(this));
+        Objects.requireNonNull(this.getCommand("removerunner")).setExecutor(new RemoveRunner(this));
         Objects.requireNonNull(this.getCommand("disphunters")).setExecutor(new DebugDisplayHunters(this));
         getServer().getPluginManager().registerEvents(new ManhuntGameListener(this), this);
     }
