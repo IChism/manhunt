@@ -15,7 +15,7 @@ public class GetCompass implements CommandExecutor {
         }
         Player player = (Player) commandSender;
 
-        ItemStack compass = new ItemStack(Material.COMPASS);
+        ItemStack compass = BuildCompass.buildHunterCompass();
 
         player.getInventory().addItem(compass);
 
