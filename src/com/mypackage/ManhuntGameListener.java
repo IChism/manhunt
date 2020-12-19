@@ -8,10 +8,10 @@ import org.bukkit.inventory.ItemStack;
 
 public class ManhuntGameListener implements Listener{
 
-    private Manhunt plugin;
+    private Teams team;
 
-    public ManhuntGameListener(Manhunt plugin){
-        this.plugin = plugin;
+    public ManhuntGameListener(Teams inputTeam){
+        this.team = inputTeam;
     }
 
     @EventHandler
@@ -19,7 +19,7 @@ public class ManhuntGameListener implements Listener{
 
         //Checks if the player is on the hunter team, and gives them the compass
         Player hunter = event.getPlayer();
-        if(plugin.getHunterIDs().contains(hunter.getUniqueId())) {
+        if(team.getHunters().contains(hunter.getUniqueId())) {
             ItemStack compass = new ItemStack(Material.COMPASS);
             hunter.getInventory().addItem(compass);
         }

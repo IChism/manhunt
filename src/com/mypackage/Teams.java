@@ -41,4 +41,8 @@ public class Teams {
     public void addRunner(Player runner) {
         this.runners.put(runner.getUniqueId(), runner.getLocation());
     }
+
+    public void removeRunner(Player runner) {
+        this.runners.remove(runner.getUniqueId());
+    }
 }
