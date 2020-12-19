@@ -12,20 +12,20 @@ import java.util.UUID;
 
 public class DebugDisplayHunters implements CommandExecutor {
 
-    private Manhunt plugin;
+    private Teams team;
 
-    public DebugDisplayHunters(Manhunt plugin){
-        this.plugin = plugin;
+    public DebugDisplayHunters(Teams inputTeam){
+        this.team = inputTeam;
     }
 
     @Override
     @SuppressWarnings("NullPointerException")
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] args) {
-        if(plugin.getHunterIDs().isEmpty()){
+        if(team.getHunters().isEmpty()){
             commandSender.sendMessage("No players on hunter team");
         }
         else {
-            for (UUID u : plugin.getHunterIDs()) {
+            for (UUID u : team.getHunters()) {
 
                 commandSender.sendMessage(ChatColor.YELLOW+"Player: "+ ChatColor.AQUA + Bukkit.getPlayer(u).getName());
             }
