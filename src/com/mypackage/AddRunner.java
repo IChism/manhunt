@@ -9,10 +9,10 @@ import org.bukkit.entity.Player;
 
 public class AddRunner implements CommandExecutor {
 
-    private Manhunt plugin;
+    private Teams team;
 
-    public AddRunner(Manhunt plugin){
-        this.plugin = plugin;
+    public AddRunner(Teams inputTeam){
+        this.team = inputTeam;
     }
 
     @Override
@@ -31,17 +31,17 @@ public class AddRunner implements CommandExecutor {
         }
         String name = target.getName();
 
-        if(plugin.getRunnerIDs().contains(target.getUniqueId())){
+        if(team.getRunners().keySet().contains(target.getUniqueId())){
             commandSender.sendMessage(ChatColor.RED + "Error, " + name + " is already on runner team");
             return true;
         }
-        else if(plugin.getHunterIDs().contains(target.getUniqueId())){
+        else if(team.getHunters().contains(target.getUniqueId())){
             commandSender.sendMessage(ChatColor.RED + "Error, " + name + " is already on hunter team");
             commandSender.sendMessage(ChatColor.RED + "Remove the player from the other team first");
             return true;
         }
         else{
-            plugin.addRunner(target);
+            team.addRunner(target);
             commandSender.sendMessage(ChatColor.GREEN +"[Manhunt] " + name + " was successfully added to runners");
         }
 

@@ -37,4 +37,8 @@ public class Teams {
     public void setRunners(Map<UUID, Location> runners) {
         this.runners = runners;
     }
+
+    public void addRunner(Player runner) {
+        this.runners.put(runner.getUniqueId(), runner.getLocation());
+    }
 }
