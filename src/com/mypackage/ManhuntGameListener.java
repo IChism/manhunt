@@ -1,14 +1,21 @@
 package com.mypackage;
-import org.bukkit.*;
+
+import net.md_5.bungee.api.ChatMessageType;
+import net.md_5.bungee.api.chat.TextComponent;
+import org.bukkit.ChatColor;
+import org.bukkit.GameMode;
+import org.bukkit.Location;
+import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerRespawnEvent;
 import org.bukkit.inventory.ItemStack;
-
 import java.util.List;
 import java.util.UUID;
+
 
 public class ManhuntGameListener implements Listener{
 
@@ -39,13 +46,18 @@ public class ManhuntGameListener implements Listener{
         Player movedPlr = event.getPlayer();
         UUID movedID = movedPlr.getUniqueId();
         if(team.getHunters().contains(movedID)) {
+
+            //Checks if the hunter right clicked with the compass, if so the sever will find runners in thier world point the compass to the nearest player
+            //and alert the player about its findings using the actionbar
             ItemStack item = event.getItem();
-            if(item.getType() == Material.COMPASS) {
+            if(item.getType() == Material.COMPASS && (event.getAction() == Action.RIGHT_CLICK_AIR || event.getAction() == Action.RIGHT_CLICK_BLOCK)) {
                 Player closestRunner = getClosestRunner(movedPlr);
                 if(closestRunner == null){
-                    movedPlr.sendRawMessage(ChatColor.RED + "No Players found in your dimension");
+                    movedPlr.spigot().sendMessage(ChatMessageType.ACTION_BAR, new TextComponent(ChatColor.RED + "No Players found in your dimension"));
                 }
                 movedPlr.setCompassTarget(closestRunner.getLocation());
+                movedPlr.spigot().sendMessage(ChatMessageType.ACTION_BAR,
+                        new TextComponent(ChatColor.YELLOW + "Nearest Runner: " + ChatColor.GREEN + closestRunner.getName()));
             }
         }
         //If the player is the only runner and is killed the game ends
