@@ -55,7 +55,9 @@ public class ManhuntGameListener implements Listener{
                 if(closestRunner == null){
                     movedPlr.spigot().sendMessage(ChatMessageType.ACTION_BAR, new TextComponent(ChatColor.RED + "No Players found in your dimension"));
                 }
-                movedPlr.setCompassTarget(closestRunner.getLocation());
+                //Sets the location of the compass to the players location (works in nether)
+                //Informs the player of who the nearest player is
+                item.setItemMeta(ManhuntUtils.setCompassTarget(item.getItemMeta(),closestRunner.getLocation()));
                 movedPlr.spigot().sendMessage(ChatMessageType.ACTION_BAR,
                         new TextComponent(ChatColor.YELLOW + "Nearest Runner: " + ChatColor.GREEN + closestRunner.getName()));
             }
@@ -63,6 +65,7 @@ public class ManhuntGameListener implements Listener{
         //If the player is the only runner and is killed the game ends
         //If there are multiple runner than the killed player is removed from the team and put into spectator
     }
+
 
     public Player getClosestRunner(Player hunter){
         Location hunterLocation = hunter.getLocation();

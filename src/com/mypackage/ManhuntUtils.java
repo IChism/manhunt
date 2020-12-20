@@ -1,8 +1,10 @@
 package com.mypackage;
 
 import org.bukkit.ChatColor;
+import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.CompassMeta;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.ArrayList;
@@ -25,6 +27,20 @@ public class ManhuntUtils {
         hunterCompass.setItemMeta(compassMeta);
 
         return hunterCompass;
+    }
+
+    //Manipulates the lodestone metadata to allow for tracking hunters through the nether and the overworld
+    //The compass item meta is passed in to make sure its previous metadata isn't overrided
+    public static ItemMeta setCompassTarget(ItemMeta compassMeta, Location closestRunner){
+
+        CompassMeta newTarget = (CompassMeta) compassMeta;
+
+        //Disables the compass from needing a lodestone block to point to locations
+        newTarget.setLodestoneTracked(false);
+
+        newTarget.setLodestone(closestRunner);
+
+        return newTarget;
     }
 
 
