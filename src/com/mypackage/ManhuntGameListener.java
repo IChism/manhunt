@@ -31,7 +31,7 @@ public class ManhuntGameListener implements Listener{
         //Checks if the player is on the hunter team, and gives them the compass
         Player hunter = event.getPlayer();
         if(team.getHunters().contains(hunter.getUniqueId())) {
-            ItemStack compass = BuildCompass.buildHunterCompass();
+            ItemStack compass = ManhuntUtils.buildHunterCompass();
             hunter.getInventory().addItem(compass);
         }
 

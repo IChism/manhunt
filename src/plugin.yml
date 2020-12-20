@@ -28,3 +28,6 @@ commands:
   removerunner:
     description: Removes the User in the hunter collection
     usage: /<command> [player]
+  clearteams:
+    description: Removes all players from a team
+    usage: /<command> [RUNNERS/HUNTERS/BOTH]

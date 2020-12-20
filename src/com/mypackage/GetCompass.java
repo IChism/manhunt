@@ -1,6 +1,5 @@
 package com.mypackage;
 
-import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -15,7 +14,7 @@ public class GetCompass implements CommandExecutor {
         }
         Player player = (Player) commandSender;
 
-        ItemStack compass = BuildCompass.buildHunterCompass();
+        ItemStack compass = ManhuntUtils.buildHunterCompass();
 
         player.getInventory().addItem(compass);
 

@@ -18,6 +18,7 @@ public class Manhunt extends JavaPlugin {
         Objects.requireNonNull(this.getCommand("disphunters")).setExecutor(new DebugDisplayHunters(team));
         Objects.requireNonNull(this.getCommand("addrunner")).setExecutor(new AddRunner(team));
         Objects.requireNonNull(this.getCommand("removerunner")).setExecutor(new RemoveRunner(team));
+        Objects.requireNonNull(this.getCommand("clearteams")).setExecutor(new ClearTeam(team));
         getServer().getPluginManager().registerEvents(new ManhuntGameListener(team), this);
     }
 

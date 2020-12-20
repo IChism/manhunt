@@ -10,8 +10,15 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Teams {
+
     private Set<UUID> hunters;
     private Map<UUID, Location> runners;
+
+    enum Team{
+        RUNNERS,
+        HUNTERS,
+        BOTH
+    }
 
     public Teams() {
         hunters = new HashSet<>();
@@ -44,5 +51,17 @@ public class Teams {
 
     public void removeRunner(Player runner) {
         this.runners.remove(runner.getUniqueId());
+    }
+
+    //Removes all hunters from the team
+    public void clearHunters()
+    {
+        this.hunters.clear();
+    }
+
+    //Removes all runners from the team
+    public void clearRunners()
+    {
+        this.runners.clear();
     }
 }

@@ -8,7 +8,7 @@ import org.bukkit.inventory.meta.ItemMeta;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BuildCompass {
+public class ManhuntUtils {
 
 
     public static ItemStack buildHunterCompass(){
