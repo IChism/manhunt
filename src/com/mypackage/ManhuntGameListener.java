@@ -1,15 +1,14 @@
 package com.mypackage;
 
 import net.md_5.bungee.api.ChatMessageType;
+import net.md_5.bungee.api.Title;
 import net.md_5.bungee.api.chat.TextComponent;
-import org.bukkit.ChatColor;
-import org.bukkit.GameMode;
-import org.bukkit.Location;
-import org.bukkit.Material;
+import org.bukkit.*;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
+import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerRespawnEvent;
 import org.bukkit.inventory.ItemStack;
@@ -37,6 +36,24 @@ public class ManhuntGameListener implements Listener{
 
         //If the player is the only runner and is killed the game ends
         //If there are multiple runner than the killed player is removed from the team and put into spectator
+    }
+
+    @EventHandler
+    public void onRunnerDeath (PlayerDeathEvent event){
+
+        //Checks if the Player is part of the runner team, if so runner is declared dead and set into spectator mode
+        Player deadPlr = event.getEntity();
+        if(team.getRunners().keySet().contains(deadPlr.getUniqueId())){
+
+            //Set the player into creative and broadcast the message and title to the server
+            deadPlr.setGameMode(GameMode.SPECTATOR);
+            Bukkit.broadcastMessage(ChatColor.GREEN + "[Manhunt] " + ChatColor.RED + "player, " +
+                    ChatColor.GREEN + deadPlr.getName() + " has been killed");
+            //TODO add a players remaining to the subtitle
+            SpigotTitle broadcastTitle = new SpigotTitle(ChatColor.GREEN + deadPlr.getName() + " was killed!","");
+            ManhuntUtils.BroadCastTitle(broadcastTitle, deadPlr.getServer());
+            ManhuntUtils.BroadCastSound(Sound.ITEM_TOTEM_USE, 1f, 0.7f, deadPlr.getServer());
+        }
     }
 
     @EventHandler

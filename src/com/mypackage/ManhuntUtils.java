@@ -1,14 +1,15 @@
 package com.mypackage;
 
-import org.bukkit.ChatColor;
-import org.bukkit.Location;
-import org.bukkit.Material;
+import com.sun.istack.internal.Nullable;
+import org.bukkit.*;
+import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.CompassMeta;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 public class ManhuntUtils {
 
@@ -41,6 +42,22 @@ public class ManhuntUtils {
         newTarget.setLodestone(closestRunner);
 
         return newTarget;
+    }
+
+    //Broadcasts a title to all players on a server
+    public static void BroadCastTitle(SpigotTitle title, Server broadcastServer){
+        Set<Player> broadcastPlayers = (Set<Player>) broadcastServer.getOnlinePlayers();
+        for (Player p: broadcastPlayers) {
+            p.sendTitle(title.title, title.subtitle, title.fadeIn, title.stay, title.fadeOut);
+        }
+    }
+
+    //Broadcasts plays a sound to all players on the server
+    public static void BroadCastSound(Sound sound, float volume, float pitch, Server broadcastServer){
+        Set<Player> broadcastPlayers = (Set<Player>) broadcastServer.getOnlinePlayers();
+        for (Player p: broadcastPlayers) {
+            p.playSound(p.getLocation(), sound, volume, pitch);
+        }
     }
 
 
