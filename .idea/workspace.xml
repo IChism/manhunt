@@ -27,7 +27,7 @@
     <list default="true" id="619fff84-3f2a-4515-88f8-b1225d09ab23" name="Default Changelist" comment="Debugged color in name formatting">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/mypackage/Manhunt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mypackage/Manhunt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mypackage/ManhuntGameListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mypackage/ManhuntGameListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mypackage/Teams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mypackage/Teams.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,17 +53,23 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/spigot-api-1.16.4-R0.1-20201125.232430-26 (2).jar!/" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/BungeeCord.jar" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="project.structure.side.proportion" value="0.1903409" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -74,6 +80,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608148772477</updated>
+      <workItem from="1608346510969" duration="525000" />
+      <workItem from="1608347059871" duration="243000" />
+      <workItem from="1608489089179" duration="462000" />
+      <workItem from="1608489564902" duration="333000" />
+      <workItem from="1608489914291" duration="117000" />
+      <workItem from="1608490049704" duration="472000" />
+      <workItem from="1608490542761" duration="7500000" />
+      <workItem from="1608504910834" duration="99000" />
+      <workItem from="1608512189402" duration="4304000" />
+      <workItem from="1608783290139" duration="1895000" />
     </task>
     <task id="LOCAL-00001" summary="added basic plugin essentials">
       <created>1608256934473</created>
@@ -145,8 +161,32 @@
       <option name="project" value="LOCAL" />
       <updated>1608323639087</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added actionbar support and a clear teams command">
+      <created>1608493438057</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1608493438057</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added a clear team command">
+      <created>1608501266070</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1608501266070</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Rewrote compass tracking to allow for tracking in nether">
+      <created>1608504834641</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1608504834641</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -170,28 +210,9 @@
     <MESSAGE value="Added Removing Hunters and formatted adding and removal command output to look nice ;)" />
     <MESSAGE value="Added Removing Hunters and formatted adding and removal command output to look nice" />
     <MESSAGE value="Debugged color in name formatting" />
-    <option name="LAST_COMMIT_MESSAGE" value="Debugged color in name formatting" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="575" y="120" key="#com.intellij.ide.util.MemberChooser" timestamp="1608321236790">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="575" y="120" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1608321236790" />
-    <state x="560" y="154" key="FileChooserDialogImpl" timestamp="1608259107409">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="560" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1608259107409" />
-    <state x="335" y="0" key="SettingsEditor" timestamp="1608259729318">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="335" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1608259729318" />
-    <state x="362" y="146" key="Vcs.Push.Dialog.v2" timestamp="1608323645457">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="362" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1608323645457" />
-    <state x="663" y="360" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608260049239">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="663" y="360" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1608260049239" />
+    <MESSAGE value="Added actionbar support and a clear teams command" />
+    <MESSAGE value="Added a clear team command" />
+    <MESSAGE value="Rewrote compass tracking to allow for tracking in nether" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rewrote compass tracking to allow for tracking in nether" />
   </component>
 </project>
