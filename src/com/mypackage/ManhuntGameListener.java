@@ -48,9 +48,10 @@ public class ManhuntGameListener implements Listener{
             //Set the player into creative and broadcast the message and title to the server
             deadPlr.setGameMode(GameMode.SPECTATOR);
             Bukkit.broadcastMessage(ChatColor.GREEN + "[Manhunt] " + ChatColor.RED + "player, " +
-                    ChatColor.GREEN + deadPlr.getName() + " has been killed");
+                    ChatColor.GREEN + deadPlr.getName() + ChatColor.RED +" has been killed");
             //TODO add a players remaining to the subtitle
-            SpigotTitle broadcastTitle = new SpigotTitle(ChatColor.GREEN + deadPlr.getName() + " was killed!","");
+
+            SpigotTitle broadcastTitle = new SpigotTitle(ChatColor.GREEN + deadPlr.getName() + " was killed!",ChatColor.RED + "" +team.getRunners().size() + ChatColor.GOLD + "runners remain");
             ManhuntUtils.BroadCastTitle(broadcastTitle, deadPlr.getServer());
             ManhuntUtils.BroadCastSound(Sound.ITEM_TOTEM_USE, 1f, 0.7f, deadPlr.getServer());
         }
