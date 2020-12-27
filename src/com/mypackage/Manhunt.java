@@ -10,6 +10,7 @@ public class Manhunt extends JavaPlugin {
     private Teams team;
     @Override
     public void onEnable() {
+        team = new Teams(getServer().getScoreboardManager().getMainScoreboard());
         Objects.requireNonNull(this.getCommand("manhuntinfo")).setExecutor(new CommandManhuntinfo());
         Objects.requireNonNull(this.getCommand("getcompass")).setExecutor(new GetCompass());
         Objects.requireNonNull(this.getCommand("titletest")).setExecutor(new InfoTitleTest());
@@ -19,7 +20,6 @@ public class Manhunt extends JavaPlugin {
         Objects.requireNonNull(this.getCommand("addrunner")).setExecutor(new AddRunner(team));
         Objects.requireNonNull(this.getCommand("removerunner")).setExecutor(new RemoveRunner(team));
         Objects.requireNonNull(this.getCommand("clearteams")).setExecutor(new ClearTeam(team));
-        team = new Teams(getServer().getScoreboardManager().getMainScoreboard());
         getServer().getPluginManager().registerEvents(new ManhuntGameListener(team), this);
     }
 
