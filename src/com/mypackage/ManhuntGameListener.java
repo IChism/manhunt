@@ -71,12 +71,14 @@ public class ManhuntGameListener implements Listener{
                 Player closestRunner = getClosestRunner(movedPlr);
                 if(closestRunner == null){
                     movedPlr.spigot().sendMessage(ChatMessageType.ACTION_BAR, new TextComponent(ChatColor.RED + "No Players found in your dimension"));
+
+                } else {
+                    //Sets the location of the compass to the players location (works in nether)
+                    //Informs the player of who the nearest player is
+                    item.setItemMeta(ManhuntUtils.setCompassTarget(item.getItemMeta(), closestRunner.getLocation()));
+                    movedPlr.spigot().sendMessage(ChatMessageType.ACTION_BAR,
+                            new TextComponent(ChatColor.YELLOW + "Nearest Runner: " + ChatColor.GREEN + closestRunner.getName()));
                 }
-                //Sets the location of the compass to the players location (works in nether)
-                //Informs the player of who the nearest player is
-                item.setItemMeta(ManhuntUtils.setCompassTarget(item.getItemMeta(),closestRunner.getLocation()));
-                movedPlr.spigot().sendMessage(ChatMessageType.ACTION_BAR,
-                        new TextComponent(ChatColor.YELLOW + "Nearest Runner: " + ChatColor.GREEN + closestRunner.getName()));
             }
         }
         //If the player is the only runner and is killed the game ends

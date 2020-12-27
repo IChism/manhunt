@@ -46,7 +46,7 @@ public class ManhuntUtils {
 
     //Broadcasts a title to all players on a server
     public static void BroadCastTitle(SpigotTitle title, Server broadcastServer){
-        Set<Player> broadcastPlayers = (Set<Player>) broadcastServer.getOnlinePlayers();
+        List<Player> broadcastPlayers = (List<Player>) broadcastServer.getOnlinePlayers();
         for (Player p: broadcastPlayers) {
             p.sendTitle(title.title, title.subtitle, title.fadeIn, title.stay, title.fadeOut);
         }
@@ -54,7 +54,7 @@ public class ManhuntUtils {
 
     //Broadcasts plays a sound to all players on the server
     public static void BroadCastSound(Sound sound, float volume, float pitch, Server broadcastServer){
-        Set<Player> broadcastPlayers = (Set<Player>) broadcastServer.getOnlinePlayers();
+        List<Player> broadcastPlayers = (List<Player>) broadcastServer.getOnlinePlayers();
         for (Player p: broadcastPlayers) {
             p.playSound(p.getLocation(), sound, volume, pitch);
         }
